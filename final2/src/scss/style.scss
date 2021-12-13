@@ -1,0 +1,35 @@
+@import "libs/bootstrap-reboot.min";
+//@import "fonts";
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/normalize";
+
+@import "blocks/titles";
+@import "blocks/descr";
+@import "blocks/cards";
+@import "blocks/forms";
+
+@import "blocks/promo";
+@import "blocks/team";
+@import "blocks/work";
+@import "blocks/price";
+@import "blocks/contact";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/pageup";
+
+@import "blocks/header";
+@import "blocks/dropdowns";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @media (max-width: 767px) {
+    &.lock {
+      overflow: hidden;
+    }
+  }
+}

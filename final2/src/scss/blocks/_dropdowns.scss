@@ -1,0 +1,40 @@
+.dropdown {
+  &:hover > & {
+    &__btn {
+      background-color: $main-color;
+      color: $second-color;
+      cursor: default;
+    }
+
+    &__content {
+      display: block;
+    }
+  }
+
+  &__btn {
+    padding: 0 16px;
+    background-color: $second-color;
+    color: $main-color;
+    line-height: 40px;
+    transition: 0.3s all;
+  }
+
+  &__content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    z-index: 1;
+
+    a {
+      display: block;
+      padding: 0 16px;
+      text-align: left;
+      color: $second-color;
+      transition: 0.3s all;
+      &:hover {
+        background-color: #ccc;
+      }
+    }
+  }
+}

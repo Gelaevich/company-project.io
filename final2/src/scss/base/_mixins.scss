@@ -1,0 +1,16 @@
+@mixin link-hover {
+  background-color: $main-color;
+  color: $second-color;
+  text-decoration: none;
+}
+
+@mixin contact-elements {
+  i {
+    color: $interaction-color;
+    font-size: 20px;
+  }
+
+  a {
+    color: $second-color;
+  }
+}

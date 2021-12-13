@@ -1,0 +1,46 @@
+.team {
+  min-height: 508px;
+  padding: 87px 0 81px 0;
+
+  @media (max-width: $mb2) {
+    padding: 20px 0 20px 0;
+
+    &__item {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 43px;
+
+    @media (max-width: $mb2) {
+      display: block;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  &__descr {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

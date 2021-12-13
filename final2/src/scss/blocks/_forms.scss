@@ -1,0 +1,58 @@
+.form {
+  min-width: 780px;
+  background-color: $main-color;
+  padding: 16px;
+  box-shadow: 0 3px 10px 0 $grey-color;
+
+  &__divider {
+    background-color: $light-grey-color;
+    height: 1px;
+  }
+
+  &__label {
+    margin-top: 22px;
+    display: block;
+  }
+
+  &__input {
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__checkbox-wrapper {
+    margin-top: 15px;
+
+    label {
+      margin-left: 5px;
+      font-size: 15px;
+      line-height: 10px;
+    }
+  }
+
+  &__checkbox {
+    color: $second-color;
+    transform: scale(1.5);
+  }
+
+  &__submit {
+    margin-top: 15px;
+    width: 70px;
+    height: 40px;
+    background-color: $second-color;
+    color: $main-color;
+    border: none;
+    outline: none;
+
+    &:hover {
+      color: $second-color;
+      background-color: $light-grey-color;
+    }
+  }
+}

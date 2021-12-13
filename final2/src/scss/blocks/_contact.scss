@@ -1,0 +1,64 @@
+.contact {
+  min-height: 450px;
+  padding: 64px 10px 64px 10px;
+  background-color: #F0F0F0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $mb0) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      form {
+        margin-top: 15px;
+        min-width: 100%;
+      }
+    }
+
+    @media(max-width: $mb3) {
+      font-size: 13px;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 10px;
+  }
+
+  &__divider {
+    height: 6px;
+    width: 131px;
+    background-color: $interaction-color;
+  }
+
+  &__address-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+
+  &__descr {
+    margin-top: 25px;
+  }
+
+  &__address {
+    margin-top: 20px;
+
+    @include contact-elements;
+  }
+
+  &__phone {
+    margin-top: 17px;
+
+    @include contact-elements;
+  }
+
+  &__email {
+    margin-top: 17px;
+
+    @include contact-elements;
+  }
+}

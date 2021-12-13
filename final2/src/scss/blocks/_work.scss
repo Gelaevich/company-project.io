@@ -1,0 +1,61 @@
+.work {
+  min-height: 600px;
+  padding: 63px 10px 63px 10px;
+  background-color: #333333;
+  color: $main-color;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 15px;
+  position: relative;
+
+  @media (max-width: $mb1) {
+    padding: 30px 10px 30px 10px;
+  }
+
+  @media (max-width: $mb3) {
+    font-size: 13px;
+  }
+
+  &__main {
+    width: 320px;
+
+    @media (max-width: $mb2) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__title {
+    color: inherit;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    color: inherit;
+  }
+
+  &__btn {
+    width: 52px;
+    height: 52px;
+    font-size: 30px;
+    border-radius: 100%;
+    background-color: $interaction-color;
+    color: $main-color;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    transform: translateY(50%);
+
+    &:hover {
+      background-color: #cccccc;
+      color: $second-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
